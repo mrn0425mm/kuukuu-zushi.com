@@ -1,0 +1,1013 @@
+/* ===================================
+   Responsive Design
+   Mobile-First Approach
+   =================================== */
+
+/* ===================================
+   Large Devices (Desktops, < 1200px)
+   =================================== */
+@media (max-width: 1199px) {
+  .container {
+    padding: 0 var(--spacing-md);
+  }
+
+  .section-title {
+    font-size: 42px;
+  }
+
+  .hero-title {
+    font-size: 60px;
+  }
+}
+
+/* ===================================
+   Medium Devices (Tablets, < 992px)
+   =================================== */
+@media (max-width: 991px) {
+  .section {
+    padding: var(--spacing-lg) 0;
+  }
+
+  .section-title {
+    font-size: 38px;
+  }
+
+  .hero-title {
+    font-size: 90px;
+  }
+
+  .hero-subtitle-top {
+    font-size: 20px;
+  }
+
+  .hero-subtitle {
+    font-size: 20px;
+  }
+
+  /* About Section */
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+
+  .about-text h2 {
+    text-align: center;
+  }
+
+  .about-image {
+    order: -1;
+  }
+
+  .image-slider {
+    height: 400px;
+  }
+
+  .slider-arrow {
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+  }
+
+  .slider-prev {
+    left: 10px;
+  }
+
+  .slider-next {
+    right: 10px;
+  }
+
+  /* Menu Grid */
+  .menu-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Recruit Section */
+  .recruit-content {
+    grid-template-columns: 1fr;
+  }
+
+  .recruit-info {
+    margin-bottom: var(--spacing-md);
+  }
+
+  /* Access Section */
+  .access-content {
+    grid-template-columns: 1fr;
+  }
+
+  .access-map {
+    margin-top: var(--spacing-md);
+  }
+}
+
+/* ===================================
+   Small Devices (Tablets, < 768px)
+   =================================== */
+@media (max-width: 767px) {
+  /* Typography */
+  .section-title {
+    font-size: 32px;
+  }
+
+  .section-subtitle {
+    font-size: 16px;
+  }
+
+  .hero-subtitle-top {
+    font-size: 16px;
+  }
+
+  .hero-title {
+    font-size: 64px;
+  }
+
+  .hero-subtitle {
+    font-size: 18px;
+  }
+
+  .phone-number-large {
+    font-size: 36px;
+  }
+
+  /* Header */
+  .header {
+    padding: 0;
+  }
+
+  .header-container {
+    padding: var(--spacing-sm) var(--spacing-md);
+  }
+
+  .logo a {
+    font-size: 22px;
+  }
+
+  .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(26, 26, 26, 0.98);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+    z-index: 999;
+  }
+
+  .nav.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: var(--spacing-md);
+    text-align: center;
+    padding: var(--spacing-md);
+  }
+
+  .nav-link {
+    font-size: 22px;
+    color: white;
+    padding: var(--spacing-sm);
+    display: block;
+  }
+
+  .nav-link:hover {
+    background-color: transparent;
+    color: var(--color-primary);
+  }
+
+  .hamburger {
+    display: flex;
+    z-index: 1001;
+    padding: var(--spacing-xs);
+  }
+
+  .header.scrolled .hamburger span {
+    background-color: var(--color-primary);
+  }
+
+  /* Notice Bar */
+  .notice-bar {
+    bottom: 80px;
+    right: var(--spacing-sm);
+    font-size: 13px;
+    padding: 12px var(--spacing-sm);
+    max-width: 240px;
+    line-height: 1.4;
+  }
+
+  /* Hero Section */
+  .hero {
+    height: auto;
+    min-height: 80vh;
+    padding: var(--spacing-lg) var(--spacing-sm);
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-title-wrapper {
+    margin-bottom: var(--spacing-md);
+  }
+
+  .hero-title {
+    font-size: 56px;
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .hero-subtitle-top {
+    font-size: 16px;
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .hero-subtitle {
+    font-size: 16px;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+    padding: var(--spacing-sm) var(--spacing-md);
+  }
+
+  /* Sections Padding */
+  .section {
+    padding: var(--spacing-lg) 0;
+  }
+
+  .container {
+    padding: 0 var(--spacing-md);
+  }
+
+  /* About Section */
+  .about-content {
+    gap: var(--spacing-lg);
+  }
+
+  .about-description {
+    font-size: 15px;
+    line-height: 1.8;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .about-highlight {
+    font-size: 17px;
+    padding: var(--spacing-md);
+    margin-top: var(--spacing-md);
+  }
+
+  /* Menu Grid */
+  .menu-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+
+  .menu-card {
+    margin-bottom: 0;
+  }
+
+  .menu-image {
+    height: 220px;
+  }
+
+  .menu-info {
+    padding: var(--spacing-md);
+  }
+
+  .menu-name {
+    font-size: 18px;
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .menu-description {
+    font-size: 14px;
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .menu-price {
+    font-size: 20px;
+  }
+
+  /* Form Layout */
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+
+  .form-group {
+    margin-bottom: 0;
+  }
+
+  .reservation-form-wrapper,
+  .recruit-form-wrapper {
+    padding: var(--spacing-lg) var(--spacing-md);
+  }
+
+  /* Recruit Section */
+  .recruit-content {
+    gap: var(--spacing-lg);
+  }
+
+  .recruit-info {
+    margin-bottom: 0;
+  }
+
+  .recruit-info h3 {
+    font-size: 22px;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .recruit-list {
+    margin-bottom: var(--spacing-md);
+  }
+
+  .recruit-list li {
+    padding: var(--spacing-sm) 0;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .recruit-message {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  /* Reservation Section */
+  .reservation-info {
+    padding: var(--spacing-lg) var(--spacing-md);
+  }
+
+  .reservation-icon {
+    font-size: 60px;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .reservation-info h3 {
+    font-size: 22px;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .reservation-details {
+    margin: var(--spacing-md) 0;
+    padding: var(--spacing-md);
+  }
+
+  .reservation-details h4 {
+    font-size: 18px;
+    margin: var(--spacing-sm) 0 var(--spacing-xs) 0;
+  }
+
+  .reservation-details p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .reservation-note {
+    margin-top: var(--spacing-md);
+    padding-top: var(--spacing-md);
+  }
+
+  /* Access Section */
+  .access-content {
+    gap: var(--spacing-lg);
+  }
+
+  .access-info h3 {
+    font-size: 22px;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .info-list {
+    gap: var(--spacing-md);
+  }
+
+  .info-list dt {
+    font-size: 14px;
+    margin-bottom: var(--spacing-xs);
+  }
+
+  .info-list dd {
+    font-size: 14px;
+    line-height: 1.6;
+    padding-bottom: var(--spacing-md);
+  }
+
+  .phone-link {
+    font-size: 18px;
+  }
+
+  .access-map {
+    margin-top: 0;
+    height: 350px;
+  }
+
+  .access-map iframe {
+    height: 100%;
+  }
+
+  /* Footer */
+  .footer {
+    padding: var(--spacing-lg) 0 var(--spacing-md);
+  }
+
+  .footer-title {
+    font-size: 20px;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .footer-info p {
+    font-size: 14px;
+    margin-bottom: var(--spacing-xs);
+    line-height: 1.6;
+  }
+
+  .back-to-top {
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+  }
+}
+
+/* ===================================
+   Extra Small Devices (Phones, < 576px)
+   =================================== */
+@media (max-width: 575px) {
+  /* Typography */
+  .section-title {
+    font-size: 28px;
+  }
+
+  .section-subtitle {
+    font-size: 14px;
+  }
+
+  .hero-title {
+    font-size: 36px;
+  }
+
+  .hero-subtitle {
+    font-size: 16px;
+  }
+
+  /* Spacing */
+  :root {
+    --spacing-xl: 60px;
+    --spacing-lg: 40px;
+  }
+
+  .container {
+    padding: 0 var(--spacing-sm);
+  }
+
+  /* Header */
+  .header-container {
+    padding: var(--spacing-sm);
+  }
+
+  .logo a {
+    font-size: 24px;
+  }
+
+  /* Notice Bar */
+  .notice-bar {
+    bottom: 70px;
+    right: var(--spacing-xs);
+    font-size: 12px;
+    padding: 10px 12px;
+    max-width: 200px;
+    line-height: 1.3;
+  }
+
+  /* Hero Section */
+  .hero {
+    min-height: 70vh;
+    padding: var(--spacing-md) var(--spacing-xs);
+  }
+
+  .hero-title-wrapper {
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .hero-subtitle-top {
+    font-size: 13px;
+    letter-spacing: 0.2em;
+    margin-bottom: 8px;
+  }
+
+  .hero-title {
+    font-size: 42px;
+    line-height: 1.3;
+    margin-bottom: 8px;
+  }
+
+  .hero-subtitle {
+    font-size: 14px;
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .hero-buttons {
+    gap: 12px;
+  }
+
+  .hero-buttons .btn {
+    padding: 12px var(--spacing-sm);
+    font-size: 14px;
+  }
+
+  .section {
+    padding: var(--spacing-md) 0;
+  }
+
+  .section-title {
+    font-size: 26px;
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .section-subtitle {
+    font-size: 13px;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .container {
+    padding: 0 var(--spacing-sm);
+  }
+
+  /* About Section */
+  .about-content {
+    gap: var(--spacing-md);
+  }
+
+  .about-description {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .about-highlight {
+    font-size: 15px;
+    padding: var(--spacing-sm);
+    margin-top: var(--spacing-sm);
+  }
+
+  .image-slider {
+    height: 280px;
+  }
+
+  .slider-arrow {
+    width: 32px;
+    height: 32px;
+    font-size: 18px;
+  }
+
+  .slider-prev {
+    left: 5px;
+  }
+
+  .slider-next {
+    right: 5px;
+  }
+
+  .dot {
+    width: 8px;
+    height: 8px;
+  }
+
+  /* Menu Section */
+  .menu-grid {
+    gap: var(--spacing-md);
+  }
+
+  .menu-image {
+    height: 200px;
+  }
+
+  .menu-info {
+    padding: var(--spacing-sm);
+  }
+
+  .menu-name {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  .menu-description {
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 8px;
+  }
+
+  .menu-price {
+    font-size: 18px;
+  }
+
+  /* Recruit Section */
+  .recruit-content {
+    gap: var(--spacing-md);
+  }
+
+  .recruit-info h3 {
+    font-size: 20px;
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .recruit-list li {
+    font-size: 14px;
+    line-height: 1.6;
+    padding: 10px 0;
+  }
+
+  .recruit-message {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-top: var(--spacing-sm);
+  }
+
+  .recruit-form-wrapper {
+    padding: var(--spacing-md) var(--spacing-sm);
+  }
+
+  .recruit-form-wrapper h3 {
+    font-size: 20px;
+    margin-bottom: var(--spacing-sm);
+  }
+
+  /* Form Elements */
+  .form {
+    gap: var(--spacing-sm);
+  }
+
+  .form-group label {
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  /* Reservation Section */
+  .reservation-info {
+    padding: var(--spacing-md) var(--spacing-sm);
+  }
+
+  .reservation-icon {
+    font-size: 50px;
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .reservation-info h3 {
+    font-size: 20px;
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .phone-number-large {
+    font-size: 32px;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .reservation-details {
+    margin: var(--spacing-sm) 0;
+    padding: var(--spacing-sm);
+  }
+
+  .reservation-details h4 {
+    font-size: 16px;
+    margin: var(--spacing-xs) 0 6px 0;
+  }
+
+  .reservation-details p {
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 8px;
+  }
+
+  .reservation-note {
+    margin-top: var(--spacing-sm);
+    padding-top: var(--spacing-sm);
+  }
+
+  .reservation-note p {
+    font-size: 12px;
+    margin-bottom: 4px;
+  }
+
+  .btn-large {
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-size: 16px;
+  }
+
+  /* Access Section */
+  .access-content {
+    gap: var(--spacing-md);
+  }
+
+  .access-info h3 {
+    font-size: 20px;
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .info-list {
+    gap: var(--spacing-sm);
+  }
+
+  .info-list dt {
+    font-size: 13px;
+    margin-bottom: 4px;
+  }
+
+  .info-list dd {
+    font-size: 13px;
+    line-height: 1.6;
+    padding-bottom: var(--spacing-sm);
+  }
+
+  .phone-link {
+    font-size: 16px;
+  }
+
+  .access-map {
+    height: 280px;
+  }
+
+  .access-map iframe {
+    height: 100%;
+  }
+
+  /* Footer */
+  .footer {
+    padding: var(--spacing-md) 0 var(--spacing-sm);
+  }
+
+  .footer-title {
+    font-size: 18px;
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .footer-info p {
+    font-size: 13px;
+    margin-bottom: 6px;
+    line-height: 1.6;
+  }
+
+  .footer-bottom {
+    padding-top: var(--spacing-sm);
+  }
+
+  .footer-bottom p {
+    font-size: 12px;
+  }
+
+  .back-to-top {
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+    bottom: var(--spacing-sm);
+    right: var(--spacing-sm);
+  }
+
+  /* Modal */
+  .modal-content {
+    padding: var(--spacing-md);
+    width: 95%;
+  }
+
+  .modal-content h3 {
+    font-size: 24px;
+  }
+
+  .modal-content p {
+    font-size: 14px;
+  }
+}
+
+/* ===================================
+   Landscape Orientation (Mobile)
+   =================================== */
+@media (max-height: 600px) and (orientation: landscape) {
+  .hero {
+    height: auto;
+    min-height: 100vh;
+    padding: var(--spacing-xl) 0;
+  }
+
+  .hero-title {
+    font-size: 36px;
+  }
+
+  .hero-subtitle {
+    font-size: 16px;
+  }
+
+  .scroll-indicator {
+    display: none;
+  }
+
+  .notice-bar {
+    position: relative;
+    top: 0;
+  }
+}
+
+/* ===================================
+   Touch Device Optimizations
+   =================================== */
+@media (hover: none) and (pointer: coarse) {
+  /* Increase touch target size */
+  .btn,
+  .nav-link,
+  .phone-link {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Remove hover effects on touch devices */
+  .menu-card:hover {
+    transform: none;
+  }
+
+  .menu-card:hover .menu-image img {
+    transform: none;
+  }
+
+  .btn:hover {
+    transform: none;
+  }
+
+  /* Make forms more touch-friendly */
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    min-height: 44px;
+    font-size: 16px; /* Prevent iOS zoom */
+  }
+}
+
+/* ===================================
+   Print Styles
+   =================================== */
+@media print {
+  .header,
+  .notice-bar,
+  .hero,
+  .back-to-top,
+  .modal,
+  .hamburger {
+    display: none !important;
+  }
+
+  .section {
+    page-break-inside: avoid;
+  }
+
+  body {
+    font-size: 12pt;
+    line-height: 1.5;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  .phone-link::after {
+    content: " (" attr(href) ")";
+  }
+}
+
+/* ===================================
+   High Resolution Displays
+   =================================== */
+@media (-webkit-min-device-pixel-ratio: 2),
+       (min-resolution: 192dpi) {
+  /* Optimize images and icons for retina displays */
+  .hero-background {
+    background-size: cover;
+    image-rendering: -webkit-optimize-contrast;
+  }
+}
+
+/* ===================================
+   Dark Mode Support (Optional)
+   =================================== */
+@media (prefers-color-scheme: dark) {
+  /* Add dark mode styles here if needed in the future */
+  /* For now, keeping the original design */
+}
+
+/* ===================================
+   Reduced Motion (Accessibility)
+   =================================== */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ===================================
+   Wide Screens (> 1400px)
+   =================================== */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+
+  .section-title {
+    font-size: 56px;
+  }
+
+  .hero-title {
+    font-size: 80px;
+  }
+}
+
+/* ===================================
+   Ultra Wide Screens (> 1920px)
+   =================================== */
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1600px;
+  }
+
+  .section {
+    padding: 150px 0;
+  }
+
+  .section-title {
+    font-size: 64px;
+  }
+
+  .hero-title {
+    font-size: 96px;
+  }
+}
+
+/* ===================================
+   Tablet Portrait Specific
+   =================================== */
+@media (min-width: 768px) and (max-width: 991px) and (orientation: portrait) {
+  .menu-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+
+  .recruit-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===================================
+   Utility Classes for Responsive
+   =================================== */
+.hide-mobile {
+  display: block;
+}
+
+.show-mobile {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .hide-mobile {
+    display: none !important;
+  }
+
+  .show-mobile {
+    display: block !important;
+  }
+}
+
+/* Text alignment utilities */
+@media (max-width: 767px) {
+  .text-center-mobile {
+    text-align: center !important;
+  }
+
+  .text-left-mobile {
+    text-align: left !important;
+  }
+}
