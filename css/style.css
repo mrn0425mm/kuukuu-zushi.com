@@ -1151,12 +1151,14 @@ button {
 .form-group input,
 .form-group select,
 .form-group textarea {
+  width: 100%;
   padding: var(--spacing-sm);
   border: 2px solid var(--color-border);
   border-radius: 8px;
   font-family: inherit;
   font-size: 16px;
   transition: var(--transition);
+  box-sizing: border-box;
 }
 
 .form-group input:focus,
