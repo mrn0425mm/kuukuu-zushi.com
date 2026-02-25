@@ -618,6 +618,8 @@
   /* Recruit Section */
   .recruit-content {
     gap: var(--spacing-md);
+    width: 100%;
+    overflow: hidden;
   }
 
   .recruit-info h3 {
@@ -625,20 +627,31 @@
     margin-bottom: var(--spacing-sm);
   }
 
+  .recruit-list {
+    width: 100%;
+    overflow-wrap: break-word;
+    word-break: break-all;
+  }
+
   .recruit-list li {
     font-size: 14px;
     line-height: 1.6;
     padding: 10px 0;
+    overflow-wrap: break-word;
+    word-break: break-all;
   }
 
   .recruit-message {
     font-size: 14px;
     line-height: 1.6;
     margin-top: var(--spacing-sm);
+    overflow-wrap: break-word;
   }
 
   .recruit-form-wrapper {
-    padding: var(--spacing-md) var(--spacing-sm);
+    padding: var(--spacing-sm);
+    width: 100%;
+    overflow: hidden;
   }
 
   .recruit-form-wrapper h3 {
