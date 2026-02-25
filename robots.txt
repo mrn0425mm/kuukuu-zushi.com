@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mrn0425mm.github.io/kuukuu-zushi.com/sitemap.xml
