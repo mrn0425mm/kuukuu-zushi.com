@@ -142,10 +142,10 @@
       },
       {
         "@type": "Question",
-        "name": "アルバイトは募集していますか？",
+        "name": "定休日はいつですか？",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "はい、ホールスタッフを募集中です。時給1,250円、週2日〜OK。初めてのアルバイトの方も歓迎しています。"
+          "text": "水曜日と木曜日が定休日です。"
         }
       }
     ]
@@ -189,7 +189,6 @@
         <ul class="nav-list">
           <li><a href="#about" class="nav-link">お店について</a></li>
           <li><a href="#menu" class="nav-link">メニュー</a></li>
-          <li><a href="#recruit" class="nav-link">採用情報</a></li>
           <li><a href="#reservation" class="nav-link">予約</a></li>
           <li><a href="#access" class="nav-link">アクセス</a></li>
         </ul>
@@ -202,11 +201,6 @@
     </div>
   </header>
 
-  <!-- Notice Bar -->
-  <div class="notice-bar">
-    <p>🎉 現在アルバイトスタッフを募集しています！ <a href="#recruit">詳しく見る</a></p>
-  </div>
-
   <!-- Hero Section -->
   <section id="hero" class="hero">
     <div class="hero-background"></div>
@@ -218,7 +212,7 @@
       </div>
       <div class="hero-buttons">
         <a href="tel:046-873-3990" class="btn btn-primary">📞 今すぐ予約</a>
-        <a href="#recruit" class="btn btn-secondary">アルバイト募集中</a>
+        <a href="#menu" class="btn btn-secondary">看板メニューを見る</a>
       </div>
     </div>
   </section>
@@ -321,69 +315,6 @@
         </div>
 
         <p class="menu-note animate-on-scroll">※その他多数のメニューをご用意しております。詳しくはお問い合わせください。</p>
-      </div>
-    </section>
-
-    <!-- Recruit Section -->
-    <section id="recruit" class="recruit section">
-      <div class="container">
-        <h2 class="section-title animate-on-scroll">アルバイト募集</h2>
-        <p class="section-subtitle animate-on-scroll">一緒に働く仲間を募集しています！</p>
-
-        <div class="recruit-content">
-          <div class="recruit-info animate-on-scroll">
-            <h3>募集要項</h3>
-            <ul class="recruit-list">
-              <li><strong>募集職種：</strong>ホールスタッフ</li>
-              <li><strong>時給：</strong>1,250円</li>
-              <li><strong>勤務時間：</strong>17:00〜21:30（週2日〜OK）<br><span class="note">※ 定休日（水・木）を除く</span></li>
-              <li><strong>歓迎条件：</strong>初めてのアルバイトの方歓迎！未経験歓迎、学生歓迎、フリーター歓迎</li>
-            </ul>
-            <p class="recruit-message">
-              アットホームな雰囲気の中で、気軽に働ける環境です。<br>
-              アルバイトが初めての方、未経験の方も丁寧に指導しますので、お気軽にご応募ください！
-            </p>
-          </div>
-
-          <div class="recruit-form-wrapper animate-on-scroll">
-            <h3>応募フォーム</h3>
-            <form id="recruit-form" class="form" action="https://formspree.io/f/xlgwdbaz" method="POST">
-              <div class="form-group">
-                <label for="recruit-name">お名前 <span class="required">*</span></label>
-                <input type="text" id="recruit-name" name="name" required>
-                <span class="error-message"></span>
-              </div>
-
-              <div class="form-group">
-                <label for="recruit-age">年齢 <span class="required">*</span></label>
-                <input type="number" id="recruit-age" name="age" min="16" max="100" required>
-                <span class="error-message"></span>
-              </div>
-
-              <div class="form-group">
-                <label for="recruit-phone">電話番号 <span class="required">*</span></label>
-                <input type="tel" id="recruit-phone" name="phone" placeholder="090-1234-5678" required>
-                <span class="error-message"></span>
-              </div>
-
-              <div class="form-group">
-                <label for="recruit-email">メールアドレス <span class="required">*</span></label>
-                <input type="email" id="recruit-email" name="email" required>
-                <span class="error-message"></span>
-              </div>
-
-              <div class="form-group">
-                <label for="recruit-availability">勤務可能日時</label>
-                <textarea id="recruit-availability" name="availability" rows="3" placeholder="例：平日の夜、週末など"></textarea>
-              </div>
-
-              <button type="submit" class="btn btn-submit">
-                <span class="btn-text">応募する</span>
-                <span class="spinner"></span>
-              </button>
-            </form>
-          </div>
-        </div>
       </div>
     </section>
 
