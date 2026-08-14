@@ -152,6 +152,17 @@
   }
   </script>
 
+  <!-- 構造化データ：サイト名をGoogleに明示 -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "チャイナダイニング 喰う喰う",
+    "alternateName": "喰う喰う 逗子",
+    "url": "https://mrn0425mm.github.io/kuukuu-zushi.com/"
+  }
+  </script>
+
   <!-- 構造化データ：パンくずリスト -->
   <script type="application/ld+json">
   {
@@ -179,6 +190,10 @@
   <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
+  <!-- お知らせバナー（内容は config/notice.js で管理・編集） -->
+  <script src="config/notice.js"></script>
+  <script src="js/notice.js"></script>
+
   <!-- Header -->
   <header class="header" id="header">
     <div class="header-container">
