@@ -111,7 +111,7 @@ button {
    =================================== */
 .header {
   position: fixed;
-  top: 0;
+  top: var(--notice-bar-height, 0px);
   left: 0;
   right: 0;
   z-index: 1000;
@@ -187,22 +187,22 @@ button {
 }
 
 /* ===================================
-   Notice Bar (Sidebar)
+   Notice Bar (お知らせバナー)
    =================================== */
 .notice-bar {
   position: fixed;
-  bottom: 100px;
-  right: var(--spacing-md);
-  z-index: 998;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1001;
   background: var(--color-primary);
   color: white;
-  padding: var(--spacing-sm) var(--spacing-md);
-  border-radius: var(--border-radius);
+  padding: var(--spacing-xs) var(--spacing-md);
   font-weight: 500;
-  font-size: 14px;
-  max-width: 280px;
-  box-shadow: var(--shadow-lg);
-  line-height: 1.5;
+  font-size: 15px;
+  line-height: 1.6;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
 }
 
 .notice-bar p {
@@ -213,8 +213,7 @@ button {
   color: white;
   text-decoration: underline;
   font-weight: 700;
-  display: inline-block;
-  margin-top: 4px;
+  margin-left: 8px;
 }
 
 .notice-bar a:hover {
