@@ -194,12 +194,9 @@
 
   /* Notice Bar */
   .notice-bar {
-    bottom: 80px;
-    right: var(--spacing-sm);
+    padding: var(--spacing-xs) var(--spacing-sm);
     font-size: 13px;
-    padding: 12px var(--spacing-sm);
-    max-width: 240px;
-    line-height: 1.4;
+    line-height: 1.5;
   }
 
   /* Hero Section */
@@ -485,12 +482,9 @@
 
   /* Notice Bar */
   .notice-bar {
-    bottom: 70px;
-    right: var(--spacing-xs);
+    padding: 8px var(--spacing-xs);
     font-size: 12px;
-    padding: 10px 12px;
-    max-width: 200px;
-    line-height: 1.3;
+    line-height: 1.4;
   }
 
   /* Hero Section */
@@ -831,11 +825,6 @@
 
   .scroll-indicator {
     display: none;
-  }
-
-  .notice-bar {
-    position: relative;
-    top: 0;
   }
 }
 
